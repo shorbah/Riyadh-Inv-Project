@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دراسة استثمار الحدائق العامة بمدينة الرياض - الإصدار النهائي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button id="prevBtn" class="nav-btn">السابق</button>
+            <div class="slide-indicator">
+                <span id="currentSlide">1</span> / <span id="totalSlides">10</span>
+            </div>
+            <button id="nextBtn" class="nav-btn">التالي</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Slide 1: Cover -->
+        <div class="slide active" id="slide-1">
+            <div class="slide-content cover-slide">
+                <div class="logo-section">
+                    <div class="company-logo">HMG</div>
+                    <div class="date">سبتمبر 2025</div>
+                </div>
+                <h1 class="main-title">دراسة استثمار الحدائق العامة بمدينة الرياض</h1>
+                <h2 class="subtitle">مبادرة إنشاء مجمعات طبية متكاملة بالشراكة مع أمانة الرياض</h2>
+                <div class="company-name">مجموعة الدكتور سليمان الحبيب للخدمات الطبية</div>
+                <div class="version-tag">الإصدار النهائي</div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Executive Summary -->
+        <div class="slide" id="slide-2">
+            <div class="slide-content">
+                <h2 class="slide-title">الملخص التنفيذي</h2>
+                <div class="executive-summary">
+                    <div class="summary-item">
+                        <div class="summary-icon">🎯</div>
+                        <h3>الهدف الاستراتيجي</h3>
+                        <p>تطوير مجمعات طبية متكاملة داخل الحدائق العامة لتحسين الوصول للخدمات الصحية</p>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-icon">🤝</div>
+                        <h3>الشراكة</h3>
+                        <p>تعاون استراتيجي بين مجموعة الحبيب وأمانة الرياض لتطوير المساحات الخضراء</p>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-icon">📈</div>
+                        <h3>الأثر المتوقع</h3>
+                        <p>تحسين الصحة العامة وخلق فرص استثمارية مستدامة وزيادة جودة الحياة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Why Public Parks -->
+        <div class="slide" id="slide-3">
+            <div class="slide-content">
+                <h2 class="slide-title">لماذا الحدائق العامة؟</h2>
+                <div class="why-parks-content">
+                    <!-- Municipality Benefits -->
+                    <div class="benefits-section municipality-benefits">
+                        <h3>فوائد للأمانة</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💰</div>
+                                <div class="benefit-text">
+                                    <h4>إيرادات سنوية ثابتة</h4>
+                                    <p>دخل من عقود الاستثمار دون استثمار أولي</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🛠️</div>
+                                <div class="benefit-text">
+                                    <h4>توفير تكاليف الصيانة</h4>
+                                    <p>المستثمر يتولى صيانة وتطوير الحدائق</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🏥</div>
+                                <div class="benefit-text">
+                                    <h4>خدمات صحية للمواطنين</h4>
+                                    <p>مراكز طبية متاحة للمواطنين بأسعار منافسة</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🎯</div>
+                                <div class="benefit-text">
+                                    <h4>تحقيق رؤية 2030</h4>
+                                    <p>شراكة حقيقية مع القطاع الخاص</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Community Benefits -->
+                    <div class="benefits-section community-benefits">
+                        <h3>فوائد للمجتمع</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🚗</div>
+                                <div class="benefit-text">
+                                    <h4>خدمات صحية قريبة</h4>
+                                    <p>رعاية طبية في قلب الأحياء السكنية</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🌳</div>
+                                <div class="benefit-text">
+                                    <h4>حدائق أجمل وأفضل</h4>
+                                    <p>صيانة احترافية ومرافق محسنة</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💼</div>
+                                <div class="benefit-text">
+                                    <h4>فرص عمل جديدة</h4>
+                                    <p>وظائف مباشرة وغير مباشرة</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💊</div>
+                                <div class="benefit-text">
+                                    <h4>تحسين جودة الحياة</h4>
+                                    <p>خدمات وقائية ومساحات خضراء محسنة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Target Neighborhoods (NEW) -->
+        <div class="slide" id="slide-4">
+            <div class="slide-content">
+                <h2 class="slide-title">الأحياء المستهدفة بمدينة الرياض</h2>
+                <div class="target-neighborhoods">
+                    <!-- Central Region -->
+                    <div class="region-section central-region">
+                        <div class="region-header">
+                            <span class="region-icon">🏛️</span>
+                            <h3>المنطقة الوسطى</h3>
+                        </div>
+                        <div class="neighborhoods-grid">
+                            <div class="neighborhood-card high-priority">
+                                <div class="neighborhood-name">الملز</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 180,000 نسمة</span>
+                                    <span class="priority high">🔴 عالية جداً</span>
+                                    <span class="phase phase-1">📅 المرحلة الأولى</span>
+                                    <span class="density high">🏢 عالية جداً</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card high-priority">
+                                <div class="neighborhood-name">السليمانية</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 165,000 نسمة</span>
+                                    <span class="priority high">🔴 عالية جداً</span>
+                                    <span class="phase phase-1">📅 المرحلة الأولى</span>
+                                    <span class="density high">🏢 عالية جداً</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card medium-priority">
+                                <div class="neighborhood-name">أم الحمام</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 95,000 نسمة</span>
+                                    <span class="priority medium">🟡 عالية</span>
+                                    <span class="phase phase-2">📅 المرحلة الثانية</span>
+                                    <span class="density medium">🏢 عالية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Northern Region -->
+                    <div class="region-section northern-region">
+                        <div class="region-header">
+                            <span class="region-icon">🌲</span>
+                            <h3>المنطقة الشمالية</h3>
+                        </div>
+                        <div class="neighborhoods-grid">
+                            <div class="neighborhood-card high-priority">
+                                <div class="neighborhood-name">الندى</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 210,000 نسمة</span>
+                                    <span class="priority high">🔴 عالية جداً</span>
+                                    <span class="phase phase-1">📅 المرحلة الأولى</span>
+                                    <span class="density high">🏢 عالية</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card medium-priority">
+                                <div class="neighborhood-name">العقيق</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 125,000 نسمة</span>
+                                    <span class="priority medium">🟡 عالية</span>
+                                    <span class="phase phase-2">📅 المرحلة الثانية</span>
+                                    <span class="density medium">🏢 متوسطة إلى عالية</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card low-priority">
+                                <div class="neighborhood-name">الياسمين</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 88,000 نسمة</span>
+                                    <span class="priority low">🟢 متوسطة</span>
+                                    <span class="phase phase-3">📅 المرحلة الثالثة</span>
+                                    <span class="density medium">🏢 متوسطة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eastern Region -->
+                    <div class="region-section eastern-region">
+                        <div class="region-header">
+                            <span class="region-icon">🌅</span>
+                            <h3>المنطقة الشرقية</h3>
+                        </div>
+                        <div class="neighborhoods-grid">
+                            <div class="neighborhood-card high-priority">
+                                <div class="neighborhood-name">الثمامة</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 145,000 نسمة</span>
+                                    <span class="priority high">🔴 عالية جداً</span>
+                                    <span class="phase phase-1">📅 المرحلة الأولى</span>
+                                    <span class="density high">🏢 عالية</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card medium-priority">
+                                <div class="neighborhood-name">غرناطة</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 110,000 نسمة</span>
+                                    <span class="priority medium">🟡 عالية</span>
+                                    <span class="phase phase-2">📅 المرحلة الثانية</span>
+                                    <span class="density high">🏢 عالية</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card low-priority">
+                                <div class="neighborhood-name">الرمال</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 75,000 نسمة</span>
+                                    <span class="priority low">🟢 متوسطة</span>
+                                    <span class="phase phase-2">📅 المرحلة الثانية</span>
+                                    <span class="density medium">🏢 متوسطة إلى عالية</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card low-priority">
+                                <div class="neighborhood-name">اليرموك</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 68,000 نسمة</span>
+                                    <span class="priority low">🟢 متوسطة</span>
+                                    <span class="phase phase-3">📅 المرحلة الثالثة</span>
+                                    <span class="density medium">🏢 متوسطة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Western Region -->
+                    <div class="region-section western-region">
+                        <div class="region-header">
+                            <span class="region-icon">🏔️</span>
+                            <h3>المنطقة الغربية</h3>
+                        </div>
+                        <div class="neighborhoods-grid">
+                            <div class="neighborhood-card medium-priority">
+                                <div class="neighborhood-name">عرقة</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 135,000 نسمة</span>
+                                    <span class="priority medium">🟡 عالية</span>
+                                    <span class="phase phase-2">📅 المرحلة الثانية</span>
+                                    <span class="density medium">🏢 متوسطة إلى عالية</span>
+                                </div>
+                            </div>
+                            <div class="neighborhood-card low-priority">
+                                <div class="neighborhood-name">المهدية</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 52,000 نسمة</span>
+                                    <span class="priority low">⚪ منخفضة</span>
+                                    <span class="phase phase-3">📅 المرحلة الثالثة</span>
+                                    <span class="density low">🏢 منخفضة إلى متوسطة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Southern Region -->
+                    <div class="region-section southern-region">
+                        <div class="region-header">
+                            <span class="region-icon">🏜️</span>
+                            <h3>المنطقة الجنوبية</h3>
+                        </div>
+                        <div class="neighborhoods-grid">
+                            <div class="neighborhood-card low-priority">
+                                <div class="neighborhood-name">الشفا</div>
+                                <div class="neighborhood-details">
+                                    <span class="population">👥 95,000 نسمة</span>
+                                    <span class="priority low">🟢 متوسطة</span>
+                                    <span class="phase phase-3">📅 المرحلة الثالثة</span>
+                                    <span class="density medium">🏢 متوسطة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summary Statistics -->
+                    <div class="summary-stats">
+                        <h3>الإحصائيات الإجمالية</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">13</div>
+                                <div class="stat-label">حي مستهدف</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1.54</div>
+                                <div class="stat-label">مليون نسمة</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1,200</div>
+                                <div class="stat-label">كم² مساحة التغطية</div>
+                            </div>
+                            <div class="stat-item phases">
+                                <div class="phases-breakdown">
+                                    <span class="phase-stat">المرحلة الأولى: 4 أحياء</span>
+                                    <span class="phase-stat">المرحلة الثانية: 5 أحياء</span>
+                                    <span class="phase-stat">المرحلة الثالثة: 4 أحياء</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: HMG Medical Strength -->
+        <div class="slide" id="slide-5">
+            <div class="slide-content">
+                <h2 class="slide-title">قوة مجموعة الحبيب الطبية</h2>
+                <div class="hmg-strength">
+                    <div class="facilities-overview">
+                        <h3>المرافق الطبية الحالية</h3>
+                        <div class="facilities-grid">
+                            <div class="facility-card hospitals">
+                                <div class="facility-icon">🏥</div>
+                                <div class="facility-number">15</div>
+                                <div class="facility-label">مستشفى</div>
+                            </div>
+                            <div class="facility-card centers">
+                                <div class="facility-icon">🏢</div>
+                                <div class="facility-number">5</div>
+                                <div class="facility-label">مراكز طبية</div>
+                            </div>
+                            <div class="facility-card international">
+                                <div class="facility-icon">🌍</div>
+                                <div class="facility-number">3</div>
+                                <div class="facility-label">مرافق دولية</div>
+                            </div>
+                            <div class="facility-card total">
+                                <div class="facility-icon">🌟</div>
+                                <div class="facility-number">23</div>
+                                <div class="facility-label">إجمالي المرافق</div>
+                            </div>
+                        </div>
+                        
+                        <div class="key-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon">👥</div>
+                                <h4>10,475 موظف</h4>
+                                <p>فريق طبي وإداري متخصص</p>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">💰</div>
+                                <h4>3.5 مليار ريال</h4>
+                                <p>رأس المال المدفوع</p>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">📈</div>
+                                <h4>7.25 مليار ريال</h4>
+                                <p>إيرادات 2021</p>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">📅</div>
+                                <h4>مدرجة منذ 2020</h4>
+                                <p>في السوق المالية السعودية</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="performance-chart">
+                        <h3>نمو الإيرادات والأرباح</h3>
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="hmgGrowthChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Health Clusters Challenges -->
+        <div class="slide" id="slide-6">
+            <div class="slide-content">
+                <h2 class="slide-title">التحديات الحالية في التجمعات الصحية</h2>
+                <div class="challenges-solutions">
+                    <div class="current-challenges">
+                        <h3>التحديات الحالية</h3>
+                        <div class="challenges-grid">
+                            <div class="challenge-item">
+                                <div class="challenge-icon">🚨</div>
+                                <h4>ازدحام شديد</h4>
+                                <p>في مراكز الرعاية الأولية</p>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">⏰</div>
+                                <h4>زمن انتظار طويل</h4>
+                                <p>للحصول على المواعيد</p>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">📍</div>
+                                <h4>فجوات جغرافية</h4>
+                                <p>في تغطية الخدمات</p>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">⚡</div>
+                                <h4>ضغط متزايد</h4>
+                                <p>على الخدمات الحكومية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="clusters-data">
+                            <div class="chart-container" style="position: relative; height: 250px;">
+                                <canvas id="healthClustersChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-solutions">
+                        <h3>كيف سيحل المشروع هذه التحديات</h3>
+                        <div class="solutions-grid">
+                            <div class="solution-item">
+                                <div class="solution-icon">📉</div>
+                                <div class="solution-content">
+                                    <h4>تخفيف 25% من الأحمال</h4>
+                                    <p>على التجمعات الصحية الحكومية</p>
+                                </div>
+                            </div>
+                            <div class="solution-item">
+                                <div class="solution-icon">🗺️</div>
+                                <div class="solution-content">
+                                    <h4>سد الفجوات الجغرافية</h4>
+                                    <p>توفير خدمات قريبة في كل حي</p>
+                                </div>
+                            </div>
+                            <div class="solution-item">
+                                <div class="solution-icon">⚡</div>
+                                <div class="solution-content">
+                                    <h4>تقليل زمن الوصول</h4>
+                                    <p>للرعاية الأولية إلى أقل من 15 دقيقة</p>
+                                </div>
+                            </div>
+                            <div class="solution-item">
+                                <div class="solution-icon">⭐</div>
+                                <div class="solution-content">
+                                    <h4>تحسين جودة الخدمة</h4>
+                                    <p>بمعايير مجموعة الحبيب العالمية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Investment Model -->
+        <div class="slide" id="slide-7">
+            <div class="slide-content">
+                <h2 class="slide-title">النموذج الاستثماري المقترح</h2>
+                <div class="investment-model">
+                    <div class="model-component">
+                        <div class="component-icon">🏥</div>
+                        <h3>استثمار المجمع الطبي</h3>
+                        <p>تطوير المرافق الطبية والمعدات بأحدث التقنيات</p>
+                        <span class="component-type">استثمار أولي</span>
+                    </div>
+                    <div class="model-component">
+                        <div class="component-icon">💰</div>
+                        <h3>إيجار سنوي للأمانة</h3>
+                        <p>دخل ثابت ومستدام لأمانة الرياض</p>
+                        <span class="component-type">إيراد سنوي</span>
+                    </div>
+                    <div class="model-component">
+                        <div class="component-icon">🌳</div>
+                        <h3>صيانة الحديقة</h3>
+                        <p>تحسين وصيانة المساحات الخضراء</p>
+                        <span class="component-type">مساهمة المستثمر</span>
+                    </div>
+                    <div class="model-component">
+                        <div class="component-icon">❤️</div>
+                        <h3>وفورات صحية</h3>
+                        <p>تحسين الصحة العامة والوقاية</p>
+                        <span class="component-type">فائدة مجتمعية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Global Success Models -->
+        <div class="slide" id="slide-8">
+            <div class="slide-content">
+                <h2 class="slide-title">النماذج العالمية الناجحة</h2>
+                <div class="global-examples">
+                    <div class="example-item">
+                        <div class="country-flag">🇨🇳</div>
+                        <h3>الصين</h3>
+                        <h4>Urban Parks Emergency Medical Facilities</h4>
+                        <p>استخدام المتنزهات الحضرية كمواقع للمرافق الطبية الطارئة ومراكز الصحة المجتمعية</p>
+                        <div class="impact-stats">تحسين الاستجابة للطوارئ بنسبة 40% وتعزيز الصحة النفسية</div>
+                        <div class="example-links">
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10260384/" target="_blank" class="link-btn">البرنامج</a>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0006320723002604" target="_blank" class="link-btn study">الدراسة</a>
+                        </div>
+                    </div>
+                    
+                    <div class="example-item">
+                        <div class="country-flag">🇺🇸</div>
+                        <h3>الولايات المتحدة</h3>
+                        <h4>Trust for Public Land - Parks Rx Programs</h4>
+                        <p>برنامج وصف الحدائق كعلاج في 26 مدينة أمريكية مع مراكز صحية متكاملة</p>
+                        <div class="impact-stats">9% انخفاض في مشاكل الصحة النفسية، 21% تقليل في الخمول البدني</div>
+                        <div class="example-links">
+                            <a href="https://www.nrpa.org/our-work/Three-Pillars/health-and-well-being/ParksandHealth/success-stories/" target="_blank" class="link-btn">البرنامج</a>
+                            <a href="https://www.nrpa.org/contentassets/f768428a39aa4035ae55b2aaff372617/healthy-communities-success-stories.pdf" target="_blank" class="link-btn study">الدراسة</a>
+                        </div>
+                    </div>
+                    
+                    <div class="example-item">
+                        <div class="country-flag">🇪🇺</div>
+                        <h3>أوروبا</h3>
+                        <h4>Healthy Parks Healthy People Europe</h4>
+                        <p>شبكة أوروبية لربط المتنزهات بالصحة العامة عبر 25 دولة</p>
+                        <div class="impact-stats">تحسين مؤشرات الصحة النفسية والجسدية في المجتمعات المشاركة</div>
+                        <div class="example-links">
+                            <a href="https://www.europarc.org/managing-parks/healthy-parks-healthy-people-europe/" target="_blank" class="link-btn">البرنامج</a>
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9197949/" target="_blank" class="link-btn study">الدراسة</a>
+                        </div>
+                    </div>
+                    
+                    <div class="example-item">
+                        <div class="country-flag">🇨🇦</div>
+                        <h3>كندا</h3>
+                        <h4>PaRx - Nature Prescriptions</h4>
+                        <p>برنامج وصف الطبيعة والحدائق كعلاج مع دمج مراكز صحية في المتنزهات</p>
+                        <div class="impact-stats">133,000 دولار وفورات سنوية لكل حديقة، تحسن 35% في مؤشرات الصحة</div>
+                        <div class="example-links">
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10049315/" target="_blank" class="link-btn">البرنامج</a>
+                            <a href="https://unhabitat.org/sites/default/files/2025/01/final_public_space_and_urban_health.pdf" target="_blank" class="link-btn study">الدراسة</a>
+                        </div>
+                    </div>
+                    
+                    <div class="example-item">
+                        <div class="country-flag">🇯🇵</div>
+                        <h3>اليابان</h3>
+                        <h4>Forest Medicine & Park Healthcare Centers</h4>
+                        <p>دمج مراكز الرعاية الصحية في الحدائق الوطنية والغابات الحضرية</p>
+                        <div class="impact-stats">تقليل 25% في مستويات التوتر وتحسن الصحة المناعية</div>
+                        <div class="example-links">
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8096710/" target="_blank" class="link-btn">البرنامج</a>
+                            <a href="https://journals.sagepub.com/doi/10.1177/10793739241277600" target="_blank" class="link-btn study">الدراسة</a>
+                        </div>
+                    </div>
+                    
+                    <div class="example-item">
+                        <div class="country-flag">🇦🇺</div>
+                        <h3>أستراليا</h3>
+                        <h4>Healthy Parks Healthy People Australia</h4>
+                        <p>مبادرة وطنية لدمج الخدمات الصحية مع المتنزهات والمساحات الطبيعية</p>
+                        <div class="impact-stats">تحسين الوصول للرعاية الصحية في المناطق النائية بنسبة 60%</div>
+                        <div class="example-links">
+                            <a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.923671/full" target="_blank" class="link-btn">البرنامج</a>
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11199775/" target="_blank" class="link-btn study">الدراسة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Community Impact & Implementation Plan -->
+        <div class="slide" id="slide-9">
+            <div class="slide-content">
+                <h2 class="slide-title">الأثر المجتمعي المتوقع وخطة التنفيذ</h2>
+                
+                <!-- Community Impact Section -->
+                <div class="community-impact">
+                    <h3>الأثر المجتمعي المتوقع</h3>
+                    <div class="impact-metrics">
+                        <div class="impact-item">
+                            <div class="impact-icon">⏱️</div>
+                            <div class="impact-content">
+                                <h4>الوصول للخدمات</h4>
+                                <div class="impact-target">أقل من 15 دقيقة</div>
+                                <p>تقليل زمن الوصول للخدمات الصحية</p>
+                            </div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">🔍</div>
+                            <div class="impact-content">
+                                <h4>الصحة الوقائية</h4>
+                                <div class="impact-target">40% زيادة</div>
+                                <p>في معدل الفحوصات الدورية</p>
+                            </div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">🚑</div>
+                            <div class="impact-content">
+                                <h4>تخفيف الضغط</h4>
+                                <div class="impact-target">25% تقليل</div>
+                                <p>في الأحمال على التجمعات الحكومية</p>
+                            </div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">💼</div>
+                            <div class="impact-content">
+                                <h4>خلق الوظائف</h4>
+                                <div class="impact-target">3,000-5,000 وظيفة</div>
+                                <p>فرص عمل مباشرة وغير مباشرة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Implementation Plan Section -->
+                <div class="implementation-section">
+                    <h3>خطة التنفيذ</h3>
+                    <div class="implementation-plan">
+                        <div class="phase-item">
+                            <div class="phase-number">1</div>
+                            <div class="phase-content">
+                                <h4>المرحلة الأولى</h4>
+                                <div class="phase-duration">6 أشهر</div>
+                                <ul>
+                                    <li>توقيع مذكرة تفاهم</li>
+                                    <li>تشكيل فريق العمل المشترك</li>
+                                    <li>اختيار المواقع النموذجية</li>
+                                    <li>وضع التصاميم الأولية</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <div class="phase-number">2</div>
+                            <div class="phase-content">
+                                <h4>المرحلة الثانية</h4>
+                                <div class="phase-duration">12 شهراً</div>
+                                <ul>
+                                    <li>الحصول على التراخيص والموافقات</li>
+                                    <li>بدء التطوير والإنشاء</li>
+                                    <li>وضع الأسس التشغيلية</li>
+                                    <li>تدريب الفرق المتخصصة</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <div class="phase-number">3</div>
+                            <div class="phase-content">
+                                <h4>المرحلة الثالثة</h4>
+                                <div class="phase-duration">6 أشهر</div>
+                                <ul>
+                                    <li>تشغيل المواقع النموذجية</li>
+                                    <li>تقييم الأداء والنتائج</li>
+                                    <li>جمع التغذية الراجعة</li>
+                                    <li>التخطيط للتوسع</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Conclusion -->
+        <div class="slide" id="slide-10">
+            <div class="slide-content contact-slide">
+                <h2 class="slide-title">الختام</h2>
+                <div class="conclusion-content">
+                    <div class="key-highlights">
+                        <h3>النقاط الرئيسية</h3>
+                        <div class="highlights-grid">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🎯</div>
+                                <h4>رؤية واضحة</h4>
+                                <p>استثمار الحدائق العامة لتحسين الصحة المجتمعية</p>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🤝</div>
+                                <h4>شراكة استراتيجية</h4>
+                                <p>تعاون مثمر بين القطاعين الحكومي والخاص</p>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🌍</div>
+                                <h4>نماذج مُثبتة عالمياً</h4>
+                                <p>تطبيق أفضل الممارسات الدولية</p>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">📈</div>
+                                <h4>أثر إيجابي مستدام</h4>
+                                <p>فوائد طويلة المدى للمجتمع والاقتصاد</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-section">
+                        <div class="contact-card">
+                            <h3>مجموعة الدكتور سليمان الحبيب للخدمات الطبية</h3>
+                            <div class="contact-info">
+                                <p>🌐 www.hmg.com</p>
+                                <p>📧 info@hmg.com</p>
+                                <p>📞 +966 11 525 9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <h3>أمانة منطقة الرياض</h3>
+                            <div class="contact-info">
+                                <p>🌐 www.alriyadh.gov.sa</p>
+                                <p>📧 info@alriyadh.gov.sa</p>
+                                <p>📞 940</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="closing-message">
+                        <h2>شكراً لكم</h2>
+                        <p>نتطلع للشراكة معكم في تحقيق رؤية الرياض الصحية 2030</p>
+                        <div class="updated-note">الإصدار النهائي - سبتمبر 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Toggle -->
+    <button id="fullscreenBtn" class="fullscreen-btn">⛶</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
